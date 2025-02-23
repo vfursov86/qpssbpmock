@@ -1,6 +1,0 @@
-@qpssbpmock_HostAddress = http://localhost:5032
-
-GET {{qpssbpmock_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###

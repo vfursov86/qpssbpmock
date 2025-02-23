@@ -54,6 +54,18 @@
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[9.0.0, )"
+            },
+            "Microsoft.Extensions.Logging.Log4Net.AspNetCore": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Prometheus-net.AspNetCore": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Prometheus.NetStandard_206Fix": {
+              "target": "Package",
+              "version": "[1.0.0, )"
             }
           },
           "imports": [
