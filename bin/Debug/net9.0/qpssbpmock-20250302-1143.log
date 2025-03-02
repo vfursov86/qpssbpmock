@@ -1,0 +1,4 @@
+2025-03-02 11:43:40,574 INFO  Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 POST http://localhost:5055/ - application/json -
+2025-03-02 11:43:40,590 WARN  Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware Failed to determine the https port for redirect.
+2025-03-02 11:43:40,611 INFO  Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 POST http://localhost:5055/ - 404 0 - 38.5277ms
+2025-03-02 11:43:40,613 INFO  Microsoft.AspNetCore.Hosting.Diagnostics Request reached the end of the middleware pipeline without being handled by application code. Request path: POST http://localhost:5055/, Response status code: 404

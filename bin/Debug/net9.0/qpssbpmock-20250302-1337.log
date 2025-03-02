@@ -1,0 +1,7 @@
+2025-03-02 13:37:01,089 INFO  Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 POST http://localhost:5055/c2c/transfers/confirm - application/json 29
+2025-03-02 13:37:01,092 INFO  Microsoft.AspNetCore.Routing.EndpointMiddleware Executing endpoint 'qpssbpmock.Controllers.TransfersController.PostConfirm (qpssbpmock)'
+2025-03-02 13:37:01,093 INFO  Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker Route matched with {action = "PostConfirm", controller = "Transfers"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.JsonResult PostConfirm(System.Text.Json.JsonElement) on controller qpssbpmock.Controllers.TransfersController (qpssbpmock).
+2025-03-02 13:37:01,094 INFO  Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-03-02 13:37:01,094 INFO  Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker Executed action qpssbpmock.Controllers.TransfersController.PostConfirm (qpssbpmock) in 0.7702ms
+2025-03-02 13:37:01,094 INFO  Microsoft.AspNetCore.Routing.EndpointMiddleware Executed endpoint 'qpssbpmock.Controllers.TransfersController.PostConfirm (qpssbpmock)'
+2025-03-02 13:37:01,095 INFO  Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 POST http://localhost:5055/c2c/transfers/confirm - 400 - application/json;+charset=utf-8 5.2614ms

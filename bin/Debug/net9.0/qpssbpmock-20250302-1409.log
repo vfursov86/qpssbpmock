@@ -1,0 +1,5 @@
+2025-03-02 14:09:47,548 INFO  Microsoft.Hosting.Lifetime Application is shutting down...
+2025-03-02 14:09:50,164 INFO  Microsoft.Hosting.Lifetime Now listening on: http://localhost:5055
+2025-03-02 14:09:50,168 INFO  Microsoft.Hosting.Lifetime Application started. Press Ctrl+C to shut down.
+2025-03-02 14:09:50,168 INFO  Microsoft.Hosting.Lifetime Hosting environment: Development
+2025-03-02 14:09:50,168 INFO  Microsoft.Hosting.Lifetime Content root path: D:\Code\qpssbpmock

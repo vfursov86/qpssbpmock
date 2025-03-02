@@ -1,0 +1,41 @@
+2025-03-02 14:06:07,706 INFO  Microsoft.Hosting.Lifetime Application is shutting down...
+2025-03-02 14:06:14,865 INFO  Microsoft.Hosting.Lifetime Now listening on: http://localhost:5055
+2025-03-02 14:06:14,870 INFO  Microsoft.Hosting.Lifetime Application started. Press Ctrl+C to shut down.
+2025-03-02 14:06:14,870 INFO  Microsoft.Hosting.Lifetime Hosting environment: Development
+2025-03-02 14:06:14,870 INFO  Microsoft.Hosting.Lifetime Content root path: D:\Code\qpssbpmock
+2025-03-02 14:06:30,523 INFO  Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 POST http://localhost:5055/c2c/integration/checkreceiver - application/json 125
+2025-03-02 14:06:30,534 WARN  Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware Failed to determine the https port for redirect.
+2025-03-02 14:06:30,541 INFO  Microsoft.AspNetCore.Routing.EndpointMiddleware Executing endpoint 'qpssbpmock.Controllers.IntegrationController.PostCheckReceiver (qpssbpmock)'
+2025-03-02 14:06:30,558 INFO  Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker Route matched with {action = "PostCheckReceiver", controller = "Integration"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.JsonResult PostCheckReceiver(System.Text.Json.JsonElement) on controller qpssbpmock.Controllers.IntegrationController (qpssbpmock).
+2025-03-02 14:06:30,579 INFO  Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker Executed action qpssbpmock.Controllers.IntegrationController.PostCheckReceiver (qpssbpmock) in 15.1559ms
+2025-03-02 14:06:30,580 INFO  Microsoft.AspNetCore.Routing.EndpointMiddleware Executed endpoint 'qpssbpmock.Controllers.IntegrationController.PostCheckReceiver (qpssbpmock)'
+2025-03-02 14:06:30,582 ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware An unhandled exception has occurred while executing the request.
+System.Collections.Generic.KeyNotFoundException: The given key was not present in the dictionary.
+   at System.Text.Json.JsonElement.GetProperty(String propertyName)
+   at qpssbpmock.Controllers.IntegrationController.PostCheckReceiver(JsonElement body) in D:\Code\qpssbpmock\Controllers\IntegrationController.cs:line 51
+   at lambda_method1(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Prometheus.HttpMetrics.HttpRequestDurationMiddleware.Invoke(HttpContext context)
+   at Prometheus.HttpMetrics.HttpRequestCountMiddleware.Invoke(HttpContext context)
+   at Prometheus.HttpMetrics.HttpInProgressMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-03-02 14:06:30,598 INFO  Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 POST http://localhost:5055/c2c/integration/checkreceiver - 500 - text/plain;+charset=utf-8 76.1898ms

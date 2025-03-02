@@ -1,0 +1,36 @@
+2025-03-02 14:10:06,825 INFO  Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 POST http://localhost:5055/c2c/fts/bankList - application/json 125
+2025-03-02 14:10:06,840 WARN  Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware Failed to determine the https port for redirect.
+2025-03-02 14:10:06,845 INFO  Microsoft.AspNetCore.Routing.EndpointMiddleware Executing endpoint 'qpssbpmock.Controllers.FtsController.PostBankList (qpssbpmock)'
+2025-03-02 14:10:06,856 INFO  Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker Route matched with {action = "PostBankList", controller = "Fts"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.JsonResult PostBankList(System.Text.Json.JsonElement) on controller qpssbpmock.Controllers.FtsController (qpssbpmock).
+2025-03-02 14:10:06,869 INFO  qpssbpmock.Controllers.FtsController Request: {"ReceiverPhoneNumber":"78951452783", "ReceiverId":"09878897234","SenderPhoneNumber":"0982348979854","SenderId":"2309489053"}
+2025-03-02 14:10:06,896 INFO  qpssbpmock.Controllers.FtsController Rsponse: {"ContentType":null,"SerializerSettings":{"Converters":[],"TypeInfoResolver":{},"TypeInfoResolverChain":[{}],"AllowOutOfOrderMetadataProperties":false,"AllowTrailingCommas":false,"DefaultBufferSize":16384,"Encoder":{"MaxOutputCharactersPerInputCharacter":6},"DictionaryKeyPolicy":null,"IgnoreNullValues":false,"DefaultIgnoreCondition":0,"NumberHandling":0,"PreferredObjectCreationHandling":0,"IgnoreReadOnlyProperties":false,"IgnoreReadOnlyFields":false,"IncludeFields":false,"MaxDepth":0,"PropertyNamingPolicy":null,"PropertyNameCaseInsensitive":false,"ReadCommentHandling":0,"UnknownTypeHandling":0,"UnmappedMemberHandling":0,"WriteIndented":false,"IndentCharacter":" ","IndentSize":2,"ReferenceHandler":null,"NewLine":"\r\n","RespectNullableAnnotations":false,"RespectRequiredConstructorParameters":false,"IsReadOnly":true},"StatusCode":null,"Value":[{"bankName":"Bank1","bankBic":"1234567890","memberId":"100000000001","supportedScenario":3},{"bankName":"Bank2","bankBic":"1234567890","memberId":"100000000002","supportedScenario":3},{"bankName":"Bank3","bankBic":"1234567890","memberId":"100000000003","supportedScenario":3},{"bankName":"Bank4","bankBic":"1234567890","memberId":"100000000004","supportedScenario":3},{"bankName":"Bank5","bankBic":"1234567890","memberId":"100000000005","supportedScenario":3}]}
+2025-03-02 14:10:06,947 INFO  Microsoft.AspNetCore.Mvc.Infrastructure.SystemTextJsonResultExecutor Executing JsonResult, writing value of type '<>f__AnonymousType0`4[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]][]'.
+2025-03-02 14:10:06,955 INFO  Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker Executed action qpssbpmock.Controllers.FtsController.PostBankList (qpssbpmock) in 91.1314ms
+2025-03-02 14:10:06,955 INFO  Microsoft.AspNetCore.Routing.EndpointMiddleware Executed endpoint 'qpssbpmock.Controllers.FtsController.PostBankList (qpssbpmock)'
+2025-03-02 14:10:06,957 INFO  Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 POST http://localhost:5055/c2c/fts/bankList - 200 - application/json;+charset=utf-8 132.5903ms
+2025-03-02 14:10:19,195 INFO  Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5055/metrics - - -
+2025-03-02 14:10:19,197 INFO  Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware No cached response available for this request.
+2025-03-02 14:10:19,247 ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware An unhandled exception has occurred while executing the request.
+System.FormatException: Input string was not in a correct format. Failure to parse near offset 2. Expected an ASCII digit.
+   at System.Text.StringBuilder.AppendFormat(IFormatProvider provider, String format, ReadOnlySpan`1 args)
+   at System.Text.StringBuilder.AppendFormat(IFormatProvider provider, String format, Object[] args)
+   at Prometheus.MeterAdapter.TranslateInstrumentDescriptionToPrometheusHelp(Instrument instrument)
+   at Prometheus.MeterAdapter.OnInstrumentPublished(Instrument instrument, MeterListener listener)
+   at System.Diagnostics.Metrics.MeterListener.Start()
+   at Prometheus.MeterAdapter..ctor(MeterAdapterOptions options)
+   at Prometheus.MeterAdapter.StartListening(MeterAdapterOptions options)
+   at Prometheus.SuppressDefaultMetricOptions.Configure(CollectorRegistry registry, ConfigurationCallbacks configurationCallbacks)
+   at Prometheus.Metrics.<>c__DisplayClass23_0.<SuppressDefaultMetrics>b__0()
+   at Prometheus.CollectorRegistry.CollectAndSerializeAsync(IMetricsSerializer serializer, CancellationToken cancel)
+   at Prometheus.MetricServerMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Builder.Extensions.MapMiddleware.InvokeCore(HttpContext context, PathString matchedPath, PathString remainingPath)
+   at Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-03-02 14:10:19,269 INFO  Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5055/metrics - 500 - text/html;+charset=utf-8 73.9804ms
+2025-03-02 14:10:19,325 INFO  Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5055/favicon.ico - - -
+2025-03-02 14:10:19,326 INFO  Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware No cached response available for this request.
+2025-03-02 14:10:19,327 INFO  Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware The response could not be cached for this request.
+2025-03-02 14:10:19,327 INFO  Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5055/favicon.ico - 404 0 - 3.5727ms
+2025-03-02 14:10:19,328 INFO  Microsoft.AspNetCore.Hosting.Diagnostics Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5055/favicon.ico, Response status code: 404

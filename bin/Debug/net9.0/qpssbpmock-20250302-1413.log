@@ -1,0 +1,6 @@
+2025-03-02 14:13:26,293 INFO  Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 POST http://localhost:5055/metrics - application/json 125
+2025-03-02 14:13:26,312 INFO  Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 POST http://localhost:5055/metrics - 200 - text/plain;+version=0.0.4;+charset=utf-8 18.3186ms
+2025-03-02 14:13:47,429 INFO  Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5055/metrics - - -
+2025-03-02 14:13:47,430 INFO  Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware No cached response available for this request.
+2025-03-02 14:13:47,436 INFO  Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware The response could not be cached for this request.
+2025-03-02 14:13:47,439 INFO  Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5055/metrics - 200 - text/plain;+version=0.0.4;+charset=utf-8 9.6888ms

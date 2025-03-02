@@ -1,0 +1,14 @@
+2025-03-02 13:44:02,308 INFO  Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 POST http://localhost:5055/c2c/transfers/init - application/json 31
+2025-03-02 13:44:02,310 INFO  Microsoft.AspNetCore.Routing.EndpointMiddleware Executing endpoint 'qpssbpmock.Controllers.TransfersController.PostInit (qpssbpmock)'
+2025-03-02 13:44:02,310 INFO  Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker Route matched with {action = "PostInit", controller = "Transfers"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.JsonResult PostInit(System.Text.Json.JsonElement) on controller qpssbpmock.Controllers.TransfersController (qpssbpmock).
+2025-03-02 13:44:02,311 INFO  Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-03-02 13:44:02,311 INFO  Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker Executed action qpssbpmock.Controllers.TransfersController.PostInit (qpssbpmock) in 1.0299ms
+2025-03-02 13:44:02,311 INFO  Microsoft.AspNetCore.Routing.EndpointMiddleware Executed endpoint 'qpssbpmock.Controllers.TransfersController.PostInit (qpssbpmock)'
+2025-03-02 13:44:02,311 INFO  Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 POST http://localhost:5055/c2c/transfers/init - 400 - application/json;+charset=utf-8 3.7341ms
+2025-03-02 13:44:13,344 INFO  Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 POST http://localhost:5055/c2c/transfers/init - application/json 4
+2025-03-02 13:44:13,345 INFO  Microsoft.AspNetCore.Routing.EndpointMiddleware Executing endpoint 'qpssbpmock.Controllers.TransfersController.PostInit (qpssbpmock)'
+2025-03-02 13:44:13,345 INFO  Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker Route matched with {action = "PostInit", controller = "Transfers"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.JsonResult PostInit(System.Text.Json.JsonElement) on controller qpssbpmock.Controllers.TransfersController (qpssbpmock).
+2025-03-02 13:44:13,346 INFO  Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-03-02 13:44:13,346 INFO  Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker Executed action qpssbpmock.Controllers.TransfersController.PostInit (qpssbpmock) in 0.7454ms
+2025-03-02 13:44:13,346 INFO  Microsoft.AspNetCore.Routing.EndpointMiddleware Executed endpoint 'qpssbpmock.Controllers.TransfersController.PostInit (qpssbpmock)'
+2025-03-02 13:44:13,346 INFO  Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 POST http://localhost:5055/c2c/transfers/init - 400 - application/json;+charset=utf-8 2.3628ms

@@ -1,0 +1,7 @@
+2025-03-02 11:52:41,904 INFO  Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 POST http://localhost:5055/c2c/transfers/participantList - application/json 29
+2025-03-02 11:52:41,905 INFO  Microsoft.AspNetCore.Routing.EndpointMiddleware Executing endpoint 'qpssbpmock.Controllers.TransfersController.PostParticipantList (qpssbpmock)'
+2025-03-02 11:52:41,906 INFO  Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker Route matched with {action = "PostParticipantList", controller = "Transfers"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.JsonResult PostParticipantList(System.Text.Json.JsonElement) on controller qpssbpmock.Controllers.TransfersController (qpssbpmock).
+2025-03-02 11:52:41,914 INFO  Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-03-02 11:52:41,915 INFO  Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker Executed action qpssbpmock.Controllers.TransfersController.PostParticipantList (qpssbpmock) in 8.8768ms
+2025-03-02 11:52:41,915 INFO  Microsoft.AspNetCore.Routing.EndpointMiddleware Executed endpoint 'qpssbpmock.Controllers.TransfersController.PostParticipantList (qpssbpmock)'
+2025-03-02 11:52:41,915 INFO  Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 POST http://localhost:5055/c2c/transfers/participantList - 400 - application/json;+charset=utf-8 11.5887ms

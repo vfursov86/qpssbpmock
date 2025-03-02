@@ -9,9 +9,9 @@ builder.Logging.ClearProviders();
 builder.Logging.AddLog4Net();
 
 // See more Kestrel server options https://learn.microsoft.com/en-us/aspnet/core/fundamentals/servers/kestrel/endpoints?view=aspnetcore-9.0
-builder.WebHost.ConfigureKestrel(options =>
+builder.WebHost.ConfigureKestrel(serverOptions =>
 {
-    serverOptions.Limits.KeepAliveTimeout = TimeSpan.Seconds(3);
+    serverOptions.Limits.KeepAliveTimeout = TimeSpan.FromSeconds(3);
     serverOptions.Limits.MaxConcurrentConnections = 200;
 });
 
@@ -24,7 +24,6 @@ app.UseAuthorization();
 app.UseResponseCaching();
 
 // Add Prometheus exporter.
-app.UseMetricServer();
 app.UseHttpMetrics();
 
 app.MapControllers();
