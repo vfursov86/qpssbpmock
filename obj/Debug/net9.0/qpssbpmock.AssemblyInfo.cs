@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("qpssbpmock")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9b86f68b0bed4d8da145368e0e5bb795537db03e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3beb3a7cdbfa497d487c76936b1738fb44ac80b4")]
 [assembly: System.Reflection.AssemblyProductAttribute("qpssbpmock")]
 [assembly: System.Reflection.AssemblyTitleAttribute("qpssbpmock")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

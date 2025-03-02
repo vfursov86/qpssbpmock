@@ -24,7 +24,8 @@ This mock exposes the following endpoints (grouped by Controllers):
 ## Rinning options
 While local deploying you use the launchSettins.json, and appsettings.Development.json configuration files.
 In production deployment you using appsettings.json.
-If URL and port are not provided, the application runs at localhost:5000.
+If URL and port are not provided, the application runs at localhost:5055.
+Be careful about url while a production deployment!
 
 ## Logging
 Default logging is disabled and log4net used instead.
